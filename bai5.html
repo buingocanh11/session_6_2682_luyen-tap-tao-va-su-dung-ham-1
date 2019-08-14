@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    let newArray1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let newArray2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let starName = prompt("Nhap ten ngoi sao");
+    function star() {
+        let name=[];
+        for ( let i=0; i<newArray1.length; i++){
+            if (starName == newArray1[i]){
+                console.log(i);
+                name.push(newArray2[i]);
+            }
+        }
+        if (name.length == 0){
+            alert("không thấy");
+        } else {
+            alert(name);
+        }
+    }
+    star(newArray1);
+</script>
+</body>
+</html>
